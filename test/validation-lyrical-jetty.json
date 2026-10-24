@@ -1,0 +1,154 @@
+{
+  "passed": true,
+  "missing_topics": [],
+  "real_time_factor_observed": 0.4643987061223084,
+  "message_counts": {
+    "joints": 137,
+    "odom": 267,
+    "imu": 241,
+    "rgb": 30,
+    "depth": 42,
+    "laser": 24
+  },
+  "laser": {
+    "frame": "base_laser_link",
+    "samples": 666,
+    "finite_samples": 574,
+    "front_min_m": 8.06974983215332
+  },
+  "rgb": {
+    "width": 640,
+    "height": 480,
+    "encoding": "rgb8",
+    "bytes": 921600
+  },
+  "depth": {
+    "width": 640,
+    "height": 480,
+    "encoding": "32FC1",
+    "bytes": 1228800
+  },
+  "tf": {
+    "base_footprint": true,
+    "base_laser_link": true,
+    "head_front_camera_optical_frame": true
+  },
+  "controllers": {
+    "gripper_controller": "active",
+    "arm_controller": "active",
+    "head_controller": "active",
+    "torso_controller": "active",
+    "mobile_base_controller": "active",
+    "ft_sensor_controller": "active",
+    "joint_state_broadcaster": "active"
+  },
+  "drive": {
+    "before": [
+      8.418913789015878e-14,
+      -9.058470226178003e-27,
+      6.207526159604266e-13
+    ],
+    "after_forward": [
+      0.43841973171490206,
+      -2.8620630301097956e-10,
+      -6.968931790408129e-10
+    ],
+    "after_turn": [
+      0.43841973171339865,
+      -2.865441775095853e-10,
+      0.40199999628763844
+    ],
+    "distance_m": 0.43841973171481785,
+    "yaw_change_rad": 0.4019999969845316
+  },
+  "actions": {
+    "torso": {
+      "status": 4,
+      "succeeded": true,
+      "error_code": 0,
+      "error": "Goal successfully reached!",
+      "joint_positions": {
+        "arm_1_joint": 0.49999999999992895,
+        "arm_2_joint": -1.3399999999948442,
+        "arm_3_joint": -0.47999999999613024,
+        "arm_4_joint": 1.9399999999686992,
+        "arm_5_joint": -1.490000000001183,
+        "arm_6_joint": 1.3699999999987968,
+        "arm_7_joint": 3.5493692024253024e-14,
+        "gripper_left_finger_joint": 0.019999999999836548,
+        "gripper_right_finger_joint": 0.020000000000162985,
+        "head_1_joint": 2.8766310769315345e-14,
+        "head_2_joint": -2.738954014766544e-11,
+        "torso_lift_joint": 0.3494407750983193,
+        "wheel_left_joint": 3.625739415877205,
+        "wheel_right_joint": 5.2761840706864955
+      }
+    },
+    "head": {
+      "status": 4,
+      "succeeded": true,
+      "error_code": 0,
+      "error": "Goal successfully reached!",
+      "joint_positions": {
+        "arm_1_joint": 0.5000000000000111,
+        "arm_2_joint": -1.3399999999948098,
+        "arm_3_joint": -0.4799999999964619,
+        "arm_4_joint": 1.939999999970361,
+        "arm_5_joint": -1.4900000000011342,
+        "arm_6_joint": 1.3699999999985364,
+        "arm_7_joint": 4.006366490507145e-14,
+        "gripper_left_finger_joint": 0.01999999999984125,
+        "gripper_right_finger_joint": 0.02000000000015847,
+        "head_1_joint": 7.146959083993259e-17,
+        "head_2_joint": -0.4988074784072785,
+        "torso_lift_joint": 0.349999999992593,
+        "wheel_left_joint": 3.6257394158772036,
+        "wheel_right_joint": 5.276184070686495
+      }
+    },
+    "gripper": {
+      "status": 4,
+      "succeeded": true,
+      "error_code": 0,
+      "error": "Goal successfully reached!",
+      "joint_positions": {
+        "arm_1_joint": 0.4999999999999938,
+        "arm_2_joint": -1.3399999999948091,
+        "arm_3_joint": -0.4799999999964746,
+        "arm_4_joint": 1.9399999999703712,
+        "arm_5_joint": -1.490000000001124,
+        "arm_6_joint": 1.3699999999985328,
+        "arm_7_joint": -8.83114073696827e-13,
+        "gripper_left_finger_joint": 0.039891125371973715,
+        "gripper_right_finger_joint": 0.03989112537229524,
+        "head_1_joint": -1.3977803242467757e-17,
+        "head_2_joint": -0.5000000000327164,
+        "torso_lift_joint": 0.34999999998089765,
+        "wheel_left_joint": 3.6257394158772045,
+        "wheel_right_joint": 5.2761840706864955
+      }
+    },
+    "wave": {
+      "status": 4,
+      "succeeded": true,
+      "success": true,
+      "error": "",
+      "joint_positions": {
+        "arm_1_joint": 0.09000000000053797,
+        "arm_2_joint": -0.7353925965318289,
+        "arm_3_joint": -2.9396222730473553,
+        "arm_4_joint": 1.8347612990228408,
+        "arm_5_joint": -1.1201355028259672,
+        "arm_6_joint": -0.031008601355452865,
+        "arm_7_joint": -2.0000735107650085,
+        "gripper_left_finger_joint": 0.03999999999765514,
+        "gripper_right_finger_joint": 0.040000000002293694,
+        "head_1_joint": -2.882104217774088e-13,
+        "head_2_joint": -0.5000000000376293,
+        "torso_lift_joint": 0.3499999078258914,
+        "wheel_left_joint": 3.6257394158778378,
+        "wheel_right_joint": 5.2761840706872425
+      }
+    }
+  }
+}

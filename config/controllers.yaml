@@ -1,0 +1,208 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+    use_sim_time: true
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+    arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+    torso_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+    head_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+    ft_sensor_controller:
+      type: force_torque_sensor_broadcaster/ForceTorqueSensorBroadcaster
+    mobile_base_controller:
+      type: diff_drive_controller/DiffDriveController
+    gripper_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+joint_state_broadcaster:
+  ros__parameters:
+    type: joint_state_broadcaster/JointStateBroadcaster
+    update_rate: 50
+arm_controller:
+  ros__parameters:
+    type: joint_trajectory_controller/JointTrajectoryController
+    joints:
+    - arm_1_joint
+    - arm_2_joint
+    - arm_3_joint
+    - arm_4_joint
+    - arm_5_joint
+    - arm_6_joint
+    - arm_7_joint
+    command_interfaces:
+    - position
+    state_interfaces:
+    - position
+    gains:
+      arm_1_joint:
+        p: 0.0
+        i: 0.0
+        d: 0.0
+      arm_2_joint:
+        p: 0.0
+        i: 0.0
+        d: 0.0
+      arm_3_joint:
+        p: 0.0
+        i: 0.0
+        d: 0.0
+      arm_4_joint:
+        p: 0.0
+        i: 0.0
+        d: 0.0
+      arm_5_joint:
+        p: 0.0
+        i: 0.0
+        d: 0.0
+      arm_6_joint:
+        p: 0.0
+        i: 0.0
+        d: 0.0
+      arm_7_joint:
+        p: 0.0
+        i: 0.0
+        d: 0.0
+    interpolate_from_desired_state: true
+    constraints:
+      goal_time: 0.6
+      stopped_velocity_tolerance: 5.0
+      arm_1_joint:
+        goal: 0.02
+      arm_2_joint:
+        goal: 0.02
+      arm_3_joint:
+        goal: 0.02
+      arm_4_joint:
+        goal: 0.02
+      arm_5_joint:
+        goal: 0.02
+      arm_6_joint:
+        goal: 0.02
+      arm_7_joint:
+        goal: 0.02
+torso_controller:
+  ros__parameters:
+    type: joint_trajectory_controller/JointTrajectoryController
+    joints:
+    - torso_lift_joint
+    command_interfaces:
+    - position
+    state_interfaces:
+    - position
+    gains:
+      torso_lift_joint:
+        p: 0.0
+        i: 0.0
+        d: 0.0
+    interpolate_from_desired_state: true
+    constraints:
+      goal_time: 0.6
+      stopped_velocity_tolerance: 5.0
+      torso_lift_joint:
+        goal: 0.02
+head_controller:
+  ros__parameters:
+    type: joint_trajectory_controller/JointTrajectoryController
+    joints:
+    - head_1_joint
+    - head_2_joint
+    command_interfaces:
+    - position
+    state_interfaces:
+    - position
+    gains:
+      head_1_joint:
+        p: 0.0
+        i: 0.0
+        d: 0.0
+      head_2_joint:
+        p: 0.0
+        i: 0.0
+        d: 0.0
+    interpolate_from_desired_state: true
+    constraints:
+      goal_time: 2.0
+      stopped_velocity_tolerance: 5.0
+      head_1_joint:
+        goal: 0.5
+      head_2_joint:
+        goal: 0.5
+ft_sensor_controller:
+  ros__parameters:
+    type: force_torque_sensor_broadcaster/ForceTorqueSensorBroadcaster
+    frame_id: wrist_ft_link
+    sensor_name: wrist_ft_sensor
+mobile_base_controller:
+  ros__parameters:
+    type: diff_drive_controller/DiffDriveController
+    left_wheel_names:
+    - wheel_left_joint
+    right_wheel_names:
+    - wheel_right_joint
+    wheel_radius: 0.0985
+    wheel_separation: 0.4044
+    wheel_separation_multiplier: 1.0
+    left_wheel_radius_multiplier: 1.0
+    right_wheel_radius_multiplier: 1.0
+    publish_rate: 50.0
+    pose_covariance_diagonal:
+    - 0.001
+    - 0.001
+    - 0.001
+    - 0.001
+    - 0.001
+    - 0.01
+    twist_covariance_diagonal:
+    - 0.001
+    - 0.001
+    - 0.001
+    - 0.001
+    - 0.001
+    - 0.01
+    cmd_vel_timeout: 0.25
+    base_frame_id: base_footprint
+    enable_odom_tf: true
+    publish_limited_velocity: true
+    linear:
+      x:
+        has_velocity_limits: true
+        max_velocity: 1.0
+        min_velocity: -0.2
+        has_acceleration_limits: true
+        max_acceleration: 0.5
+    angular:
+      z:
+        has_velocity_limits: true
+        max_velocity: 1.05
+        has_acceleration_limits: true
+        max_acceleration: 1.05
+    tf_frame_prefix_enable: false
+gripper_controller:
+  ros__parameters:
+    type: joint_trajectory_controller/JointTrajectoryController
+    joints:
+    - gripper_right_finger_joint
+    - gripper_left_finger_joint
+    command_interfaces:
+    - position
+    state_interfaces:
+    - position
+    gains:
+      gripper_right_finger_joint:
+        p: 0.0
+        i: 0.0
+        d: 0.0
+      gripper_left_finger_joint:
+        p: 0.0
+        i: 0.0
+        d: 0.0
+    interpolate_from_desired_state: true
+    constraints:
+      goal_time: 0.6
+      stopped_velocity_tolerance: 5.0
+      gripper_right_finger_joint:
+        goal: 0.02
+      gripper_left_finger_joint:
+        goal: 0.02

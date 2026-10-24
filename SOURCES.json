@@ -1,0 +1,46 @@
+{
+  "tiago_description": {
+    "repository": "https://github.com/pal-robotics/tiago_robot",
+    "commit": "f1c33c92bdde7c1dd79f0c3e739e98a233dbd30b",
+    "package_path": "tiago_description",
+    "license": "Apache-2.0"
+  },
+  "pmb2_description": {
+    "repository": "https://github.com/pal-robotics/pmb2_robot",
+    "commit": "e6584136f15356b8f4944c25d70fb8689e3355af",
+    "package_path": "pmb2_description",
+    "license": "Apache-2.0"
+  },
+  "pal_gripper_description": {
+    "repository": "https://github.com/pal-robotics/pal_gripper",
+    "commit": "485b535532c04b0ce31a00ad431d99e2714c0d54",
+    "package_path": "pal_gripper_description",
+    "license": "Apache-2.0"
+  },
+  "pal_urdf_utils": {
+    "repository": "https://github.com/pal-robotics/pal_urdf_utils",
+    "commit": "e8600a339a3a9b7ffe67d1030190b97b67fb577b",
+    "package_path": "",
+    "license": "Apache-2.0"
+  },
+  "jetty_demo": {
+    "repository": "https://github.com/gazebosim/jetty_demo",
+    "commit": "b576ffc435661cdac3123f6ff91a18a22cd1278a",
+    "license": "Apache-2.0"
+  },
+  "tiago_moveit_config": {
+    "repository": "https://github.com/pal-robotics/tiago_moveit_config",
+    "commit": "a71258d5f22f2bd06ead8db78bba8cef7a58962e",
+    "license": "Apache-2.0"
+  },
+  "tiago_robot": {
+    "repository": "https://github.com/pal-robotics/tiago_robot",
+    "commit": "f1c33c92bdde7c1dd79f0c3e739e98a233dbd30b",
+    "license": "Apache-2.0"
+  },
+  "tiago_simulation": {
+    "repository": "https://github.com/pal-robotics/tiago_simulation",
+    "commit": "43cb13f383216c4a36210374ebffe220f6c9469d",
+    "license": "Apache-2.0"
+  }
+}
