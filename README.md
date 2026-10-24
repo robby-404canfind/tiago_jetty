@@ -4,7 +4,7 @@ ROS 2 Lyrical에서 TIAGo를 Gazebo Jetty 창고 월드와 함께 실행하는 �
 
 TIAGo의 주행, 7축 팔, 몸통, 머리, 그리퍼와 레이저·RGB-D 카메라·IMU를 사용할 수 있습니다. 기존 `play_motion2` 명령도 그대로 사용합니다.
 
-![Gazebo Jetty 창고에서 실행한 TIAGo](media/tiago-jetty.jpg)
+![Gazebo Jetty 창고에서 실행한 TIAGo](media/tiago-jetty.png)
 
 ## 설치
 
