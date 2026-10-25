@@ -55,10 +55,10 @@ ros2 action send_goal /play_motion2 play_motion2_msgs/action/PlayMotion2 "{motio
 몸통을 움직여 볼 수 있습니다.
 
 ```bash
-ros2 action send_goal /torso_controller/follow_joint_trajectory control_msgs/action/FollowJointTrajectory "{trajectory: {joint_names: ['torso_lift_joint'], points: [{positions: [0.35], time_from_start: {sec: 3}}]}}"
+ros2 action send_goal /torso_controller/follow_joint_trajectory control_msgs/action/FollowJointTrajectory "{trajectory: {joint_names: ['torso_lift_joint'], points: [{positions: [0.35], time_from_start: {sec: 6}}]}}"
 ```
 
-RViz도 함께 열려면 `rviz:=true`, 화면 없이 실행하려면 `gui:=false`를 추가합니다. 로봇의 생성 위치는 `x`, `y`, `z`, `yaw`로 바꿀 수 있습니다.
+RViz도 함께 열려면 `rviz:=true`, 화면 없이 실행하려면 `gui:=false`를 추가합니다. 로봇은 주행 실습 공간이 있는 통로에서 시작하며, 생성 위치는 `x`, `y`, `z`, `yaw`로 바꿀 수 있습니다.
 
 ## 주요 인터페이스
 

@@ -156,7 +156,7 @@ def main():
         if args.actions:
             report['actions'] = {}
             for controller, joints, positions, seconds in [
-                ('torso', ['torso_lift_joint'], [0.35], 3),
+                ('torso', ['torso_lift_joint'], [0.35], 6),
                 ('head', ['head_1_joint', 'head_2_joint'], [0.0, -0.5], 3),
                 ('gripper', ['gripper_left_finger_joint', 'gripper_right_finger_joint'], [0.04, 0.04], 2),
             ]:

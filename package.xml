@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="3">
   <name>tiago_jetty</name>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
   <description>TIAGo mobile manipulation lessons in the Gazebo Jetty warehouse.</description>
   <maintainer email="robby.404canfind@gmail.com">Robby</maintainer>
   <license>Apache-2.0</license>
